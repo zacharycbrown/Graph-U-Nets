@@ -5,12 +5,12 @@ GPU=${3-0}
 
 seed=1
 
-CONFIG=configs/${DATA}
+CONFIG="Graph-U-Nets"/configs/${DATA}
 if [ ! -f "$CONFIG" ]; then
     echo "No config file for ${DATA} in configs folder"
     exit 128
 fi
-source configs/${DATA}
+source "Graph-U-Nets"/configs/${DATA}
 
 FOLDER=results
 FILE=${FOLDER}/${DATA}.txt
@@ -19,7 +19,7 @@ if [ ! -d "$FOLDER" ]; then
 fi
 
 run(){
-    CUDA_VISIBLE_DEVICES=${GPU} python3 src/main.py \
+    CUDA_VISIBLE_DEVICES=${GPU} python3 "Graph-U-Nets"/src/main.py \
         -seed $seed -data $DATA -fold $1 -num_epochs $num_epochs \
         -batch $batch_size -lr $learning_rate -deg_as_tag $deg_as_tag \
         -l_num $layer_num -h_dim $hidden_dim -l_dim $layer_dim \
