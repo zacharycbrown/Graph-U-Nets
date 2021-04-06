@@ -74,7 +74,7 @@ Results
 Reference
 ---------
 
-If you find the code useful, please cite our paper:
+The citation for the original Graph U-Net original paper:
 
     @inproceedings{gao2019graph,
         title={Graph U-Nets},
