@@ -1,7 +1,7 @@
 PyTorch Implementation of Graph U-Nets
 ======================================
 
-The original version of this repository was created by [Hongyang Gao](https://faculty.sites.iastate.edu/hygao/) @ Iowa State University, and
+The original version of this repository can be found at https://github.com/HongyangGao/Graph-U-Nets.git and was created by [Hongyang Gao](https://faculty.sites.iastate.edu/hygao/) @ Iowa State University, and
 [Shuiwang Ji](http://people.tamu.edu/~sji/) @ Texas A&M University.
 
 The current version of this repository was adapted from the original for use in the ECE 590 Deep Learning course at Duke University, by Zachary Brown on April 6th, 2021.
